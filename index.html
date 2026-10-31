@@ -1,45 +1,111 @@
 <!doctype html>
 <html lang="tr">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="light">
-  <title>ParkRadar | Gizlilik Politikası</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#132b39" />
+  <meta name="description" content="ParkRadar uygulamasının gizlilik politikası: konum, park gözlemleri, fotoğraflar ve veri saklama hakkında bilgiler." />
+  <title>Gizlilik Politikası | ParkRadar</title>
   <style>
-    :root {font-family: system-ui,-apple-system,'Segoe UI',sans-serif;color:#1e1930;background:#f8f7fd;font-synthesis:none}
-    * {box-sizing:border-box} body{margin:0;line-height:1.7}
-    .top{background:#21122d;color:white;padding:30px 22px}
-    .top-inner,.content{max-width:800px;margin:0 auto}
-    .brand{font-size:20px;font-weight:800;letter-spacing:-.4px}.brand span{color:#b58aff}
-    h1{font-size:clamp(28px,5vw,42px);line-height:1.2;margin:24px 0 8px}
-    .date{color:#dbcde9;font-size:14px}
-    .content{padding:30px 22px 70px}
-    section{background:white;border:1px solid #eee9f7;border-radius:14px;padding:20px 24px;margin:16px 0;box-shadow:0 4px 24px #5d3c8b0b}
-    h2{font-size:19px;line-height:1.3;margin:0 0 12px;color:#432374}
-    p{margin:9px 0} ul{padding-left:22px;margin:10px 0} li{margin:7px 0}
-    .todo{background:#fff4d6;border:2px solid #e5a12e;color:#4a3200;padding:18px 21px;border-radius:14px}
-    .needs{color:#8f2f18;background:#fff1ed;padding:2px 5px;border-radius:5px;font-weight:750}
-    a{color:#673cc5} footer{font-size:13px;color:#777086;text-align:center;margin-top:30px}
+    :root { font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; color: #172a35; background: #f4f8f9; font-synthesis: none; }
+    * { box-sizing: border-box; }
+    body { margin: 0; line-height: 1.75; }
+    a { color: #006a68; overflow-wrap: anywhere; }
+    header { background: linear-gradient(120deg, #0b2734, #125d5a); color: #fff; padding: 48px 24px 40px; }
+    .wrap { max-width: 860px; margin: auto; }
+    .brand { font-size: 1.08rem; font-weight: 780; letter-spacing: .03em; }
+    .brand span { color: #89e7cd; }
+    h1 { font-size: clamp(2rem, 5vw, 3rem); line-height: 1.2; margin: 16px 0 10px; }
+    .date { font-size: .92rem; opacity: .85; }
+    main { padding: 30px 22px 66px; }
+    section { padding: 24px 26px; background: #fff; border: 1px solid #e2ebec; border-radius: 16px; margin: 0 0 17px; box-shadow: 0 4px 18px #17334508; }
+    h2 { font-size: 1.2rem; color: #0c504f; margin: 0 0 10px; line-height: 1.4; }
+    p { margin: 9px 0; }
+    ul { margin: 10px 0; padding-left: 22px; }
+    li { margin: 8px 0; }
+    .intro { font-size: 1.02rem; }
+    footer { text-align: center; font-size: .88rem; color: #52666c; padding: 11px; }
+    @media (max-width: 520px) { section { padding: 20px; } header { padding-top: 35px; } }
   </style>
 </head>
 <body>
-<header class="top"><div class="top-inner"><div class="brand">Park<span>Radar</span></div><h1>Gizlilik Politikası</h1><div class="date">Son güncelleme: 31 Ekim 2026</div></div></header>
-<main class="content">
-  <div class="todo"><strong>Yayımlamadan önce kontrol et:</strong> Bu metin, ParkRadar'ın bilinen özelliklerine göre hazırlanmış bir taslaktır. Aşağıdaki kırmızı alanları gerçek bilgilerle değiştirin, fotoğraf yükleme, veri saklama ve üçüncü taraf veri akışlarını uygulamanın gerçek işleyişiyle doğrulayın. Eksik veya gerçeğe uymayan bilgiyle Google Play'e göndermeyin.</div>
-  <section><h2>1. Hakkımızda</h2><p>Bu Gizlilik Politikası, bağımsız bir park yeri keşfi ve navigasyon uygulaması olan <strong>ParkRadar</strong> (Android paket adı: <code>com.yigitshn0.parkradar</code>) için geçerlidir. Kullanıcıların kişisel verilerine nasıl erişildiğini, verilerin hangi amaçlarla kullanıldığını ve taleplerini nasıl iletebileceklerini açıklar.</p><p>Geliştirici/yayıncı: <strong>ParkRadar</strong><br>Gizlilik iletişim adresi: <span class="needs">[GİZLİLİK İÇİN İLETİŞİM E-POSTASI]</span></p></section>
-  <section><h2>2. Kullanılan veriler</h2><ul>
-    <li><strong>Konum bilgisi:</strong> Konum izni verdiğinizde uygulama mevcut konumunuzu haritada göstermek, yakındaki park alanlarını bulmak, rota oluşturmak ve aktif navigasyon sırasında konumunuzu izlemek için konum bilgisine erişir. Bilinen uygulama akışı, kullanım sırasında konum izlemeyi içerir. Arka plan konum erişimi varsa bu metin buna göre güncellenmelidir.</li>
-    <li><strong>Park gözlemleri:</strong> Kullanıcıların seçtikleri yol kesiti için ilettikleri park yoğunluğu/doluluk tahmini ve gözlemle ilişkili veriler, tahminleri ve park bilgilerini güncellemek için işlenebilir.</li>
-    <li><strong>Kaydedilen araç yeri:</strong> Kullanıcının kendi aracının konumunu kaydetme işlevi için belirlediği konum bilgisi işlenebilir. <span class="needs">[BU BİLGİNİN CİHAZDA MI, SUNUCUDA MI TUTULDUĞUNU DOĞRULA]</span></li>
-    <li><strong>Fotoğraflar:</strong> <span class="needs">[FOTOĞRAFLARIN SUNUCUYA YÜKLENİP YÜKLENMEDİĞİNİ, KİMLERİN GÖREBİLDİĞİNİ VE NE KADAR SAKLANDIĞINI AÇIKLA]</span></li>
-    <li><strong>Teknik bilgiler:</strong> Harita, yönlendirme ve altyapı sağlayıcıları, hizmetleri sunabilmek için gerekli istek ve teknik bağlantı verilerini işleyebilir. <span class="needs">[ANALİTİK, CİHAZ KİMLİĞİ VE HATA GÜNLÜĞÜ KULLANIMINI DOĞRULA]</span></li>
-  </ul></section>
-  <section><h2>3. Verileri kullanım amaçlarımız</h2><p>Veriler, haritayı ve mevcut konumu göstermek, park kesitlerini ve doluluk tahminlerini sunmak, navigasyon rotaları hazırlamak, kaydedilen araç konumuna dönüşü kolaylaştırmak, kullanıcı gözlemlerini değerlendirmek, hataları tespit etmek ve hizmet güvenliğini sağlamak için işlenebilir.</p><p>Park dolulukları tahmine dayalı olabilir ve her zaman kesin olarak boş yer bulunduğunu garanti etmez.</p></section>
-  <section><h2>4. Üçüncü taraf hizmet sağlayıcıları</h2><p>Uygulamanın bilinen teknik yapısında <strong>Google Maps Platform</strong> (harita), <strong>Supabase</strong> (uygulama veritabanı ve altyapı) ve <strong>OSRM tabanlı rota hizmeti</strong> (navigasyon) bulunmaktadır. Bu hizmetlere işlev için gerekli harita ve rota talepleri, konum/başlangıç-varış koordinatları ve bağlantı bilgileri iletilebilir. Üçüncü tarafların kendi gizlilik politikaları da geçerli olabilir.</p><p><span class="needs">[GERÇEK API UÇ NOKTALARINI VE EK SDK'LARI DOĞRULA]</span></p></section>
-  <section><h2>5. Veri saklama, güvenlik ve silme</h2><p>Veriler yalnızca bildirilen hizmet amaçları için gerekli olduğu sürece saklanmalıdır. Uygulamanın gerçek saklama ve silme uygulaması: <span class="needs">[VERİ TÜRÜNE GÖRE SAKLAMA SÜRESİ / SİLME KURALI]</span>.</p><p>Gizlilikle ilgili soru, erişim veya silme talepleri için <span class="needs">[GİZLİLİK E-POSTASI]</span> adresinden iletişime geçebilirsiniz. Kimliği ilişkilendirilebilen veriler bakımından talepler, geçerli mevzuat ve teknik imkânlar çerçevesinde değerlendirilir.</p><p>Uygulamanın veri iletim ve erişim kontrolleri: <span class="needs">[HTTPS / ERİŞİM KISITLARI / YETKİ KONTROLLERİ DOĞRULANMALI]</span>.</p></section>
-  <section><h2>6. Reklam ve çocukların gizliliği</h2><p>Mevcut sürümde uygulama içi reklam gösterilmemektedir. Reklam veya reklam ölçümü ileride eklenirse politika ve Google Play veri beyanları güncellenecektir.</p><p>ParkRadar'ın hedef kitlesi yetişkin sürücülerdir (18 yaş ve üzeri). Uygulama özellikle çocukları hedeflememektedir.</p></section>
-  <section><h2>7. Politika değişiklikleri</h2><p>Uygulamanın özellikleri veya veri işleme süreçleri değiştiğinde bu politika güncellenebilir. Güncel sürüm bu sayfada ve uygulama içindeki bağlantı üzerinden erişilebilir olacaktır.</p></section>
-  <footer>ParkRadar · Gizlilik Politikası · 31.10.2026</footer>
-</main>
+  <header>
+    <div class="wrap">
+      <div class="brand">Park<span>Radar</span></div>
+      <h1>Gizlilik Politikası</h1>
+      <div class="date">Son güncelleme: 31 Ekim 2026</div>
+    </div>
+  </header>
+  <main class="wrap">
+    <section class="intro">
+      <h2>1. Uygulama ve iletişim</h2>
+      <p>Bu Gizlilik Politikası, <strong>ParkRadar</strong> adlı park yeri keşfi, doluluk tahmini ve navigasyon uygulamasının (Android paket adı: <code>com.yigitshn0.parkradar</code>) veri işleme uygulamalarını açıklar.</p>
+      <p>Uygulama adı ve yayıncı markası: <strong>ParkRadar</strong>.<br />Gizlilik soruları ve veri silme talepleri: <a href="mailto:yigitshn08@gmail.com">yigitshn08@gmail.com</a>.</p>
+    </section>
+
+    <section>
+      <h2>2. Konum bilgilerinin kullanılması</h2>
+      <p>Konum izni verdiğinizde ParkRadar, mevcut konumunuzu haritada göstermek, yakınınızdaki park alanlarını bulmak, bulunduğunuz yol kesitini değerlendirmek, araç yerini kaydetmek ve navigasyon sağlamak için yaklaşık veya hassas konumunuza erişebilir. Navigasyon, akıllı park tespiti ve araca yaklaşma uyarısı gibi özellikler etkin olduğunda uygulama kullanım sırasında konum değişikliklerini izleyebilir.</p>
+      <p>İncelenen uygulama akışı <strong>ön plan (uygulama kullanımda iken) konum erişimine</strong> dayanır; arka planda sürekli konum takibi için ayrı bir izin veya hizmet tespit edilmemiştir. Konum iznini telefonunuzun ayarlarından kapatabilirsiniz; bu durumda konuma dayalı özellikler kısıtlanabilir.</p>
+      <p>Rota oluşturduğunuzda <strong>başlangıç, hedef ve bazı durumlarda ara nokta koordinatları</strong> rota sağlayıcılarına iletilir. Kullanıcının park doluluğu gözlemi gönderirken bulunduğu yerin ilgili kesite yakınlığı uygulama içinde hesaplanır; ancak üçüncü taraf servis talepleri ve bağlantı kayıtları nedeniyle tüm konum işlemlerinin yalnızca cihazda gerçekleştiği söylenemez.</p>
+    </section>
+
+    <section>
+      <h2>3. Park gözlemleri ve tahmin verileri</h2>
+      <p>“Gözlem bildir” özelliğini kullandığınızda bildirdiğiniz doluluk oranı, ilgili yol kesiti ve gözlemle ilişkili veriler <strong>Supabase</strong> altyapısına gönderilebilir ve saklanabilir. Uygulama, bildirimlerin kötüye kullanılmasını sınırlandırmak için cihazda oluşturulan <strong>takma adlı, kalıcı bir istemci kimliği (<code>client_id</code>)</strong> kullanır. Gözlem zamanı ve güvenilirlik gibi ek alanlar sunucu tarafında işlenebilir.</p>
+      <p>Park yeri bulup bulamadığınıza ilişkin isteğe bağlı “Evet/Hayır” geri bildirimi verdiğinizde ilgili yol kesiti, sonuç ve istemci kimliği Supabase'e iletilebilir. Bu kayıtlar; doluluk tahminlerini geliştirme, doğrulama, hatalı veya spam bildirimleri belirleme ve geçmiş yoğunluk eğilimlerini değerlendirme amaçlarıyla kullanılır.</p>
+      <p><strong>Önemli:</strong> İstemci kimliği kullanılan kayıtları, tamamen anonim veri olarak tanımlamıyoruz. Kimlikten arındırılmış ve kişi/cihazla yeniden ilişkilendirilemeyen toplulaştırılmış istatistikler uzun vadeli tahmin geliştirmede kullanılabilir; anonimleştirme tamamlanmadan ham kayıtların anonim olduğu varsayılmaz.</p>
+    </section>
+
+    <section>
+      <h2>4. Cihazda tutulan bilgiler, fotoğraflar ve bildirimler</h2>
+      <ul>
+        <li><strong>Kaydedilmiş araç konumu:</strong> Kaydettiğiniz araç koordinatları, saat, not ve benzeri ayrıntılar uygulamanın yerel depolama alanında tutulur. ParkRadar bunları ayrı bir kullanıcı hesabına veya Supabase'deki araç konumu tablosuna yüklemez.</li>
+        <li><strong>Park geçmişi ve favoriler:</strong> Önceki park yerleri, favori noktalar, son rotalar ve tercih ayarları telefonunuzun uygulama depolama alanında saklanabilir.</li>
+        <li><strong>Park fotoğrafları:</strong> Kamera izninizle çekilen park fotoğrafları telefonun uygulamaya ait dosya alanına kopyalanır. İncelenen uygulama kodunda fotoğrafların ParkRadar sunucusuna veya Supabase Storage'a yüklenmesi bulunmamaktadır; bu fotoğraflar uygulama aracılığıyla diğer kullanıcılarla paylaşılmaz.</li>
+        <li><strong>Bildirimler:</strong> Araca yaklaşınca uyarı gibi isteğe bağlı özellikler telefon üzerinden yerel bildirim oluşturabilir. İncelenen kodda bu özellik için uzaktan push bildirim sunucusuna cihaz bildirim belirteci kaydı tespit edilmemiştir.</li>
+      </ul>
+      <p>Telefonunuzda etkinse Android işletim sisteminin yedekleme mekanizmaları, bazı yerel uygulama verilerinin cihaz dışındaki hesabınıza yedeklenmesine neden olabilir. Bu işlem işletim sisteminin ayarlarına ve politikalarına bağlıdır.</p>
+    </section>
+
+    <section>
+      <h2>5. Üçüncü taraf hizmetler</h2>
+      <p>ParkRadar'ın özellikleri çalışırken aşağıdaki hizmetler kullanılabilir:</p>
+      <ul>
+        <li><strong>Google Maps Platform:</strong> Harita görüntüleme ve ilgili SDK hizmetleri. Google, cihaz ve SDK bilgileri, IP adresi, harita etkileşimleri ve tanımlayıcılar gibi teknik bilgileri kendi hizmet politikaları çerçevesinde işleyebilir. <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google Gizlilik Politikası</a>.</li>
+        <li><strong>Supabase:</strong> Yol kesiti, park doluluk gözlemleri, geri bildirimler, tahmin profilleri, anlık veri güncellemeleri ve bazı ulaşım verileri için uygulama altyapısı. <a href="https://supabase.com/privacy" rel="noopener noreferrer">Supabase Gizlilik Politikası</a>.</li>
+        <li><strong>OSRM rota hizmeti:</strong> Navigasyon için rota talebinde başlangıç, hedef ve gerektiğinde ara koordinatlar. İstekler <code>router.project-osrm.org</code> gibi hizmet uç noktalarına gönderilebilir.</li>
+        <li><strong>OpenStreetMap / Overpass API:</strong> Alışveriş merkezi ve harita çevresi bilgileri için sorgular. <a href="https://osmfoundation.org/wiki/Privacy_Policy" rel="noopener noreferrer">OpenStreetMap Foundation gizlilik bilgileri</a>.</li>
+        <li><strong>İBB İSPARK ve İETT veri hizmetleri:</strong> Otopark doluluk ve toplu taşıma verilerini almak için ilgili veri kaynakları ve uygulamanın aracı sunucu işlevleri.</li>
+        <li><strong>OpenRouteService (etkinse):</strong> Yaya rotası hesaplama için ilgili koordinatlar <code>api.heigit.org</code> hizmetine gönderilebilir.</li>
+      </ul>
+      <p>Bu hizmetler internet bağlantısı sırasında IP adresi, isteğin zamanı ve cihaz/uygulama hakkında teknik bağlantı bilgilerine erişebilir. Üçüncü tarafların kendi saklama ve silme koşulları geçerlidir.</p>
+    </section>
+
+    <section>
+      <h2>6. Saklama süreleri ve verilerin silinmesi</h2>
+      <p>Yerel park kayıtları ve tercih verileri, kullanıcı tarafından kaldırılana veya uygulamanın verileri temizlenene kadar cihazda kalabilir. Uygulama içindeki “Kaydedilmiş aracı kaldır” işlemi aktif araç kaydını kaldırır; <strong>önceki park geçmişi veya fotoğraf dosyalarının tamamını otomatik olarak temizlediği garanti edilmez.</strong> Telefonunuzun uygulama verilerini temizlemek yerel kayıtları kaldırabilir. İşletim sistemi yedekleri ayrıca yönetilebilir.</p>
+      <p>Supabase'e gönderilen park gözlemleri ve park sonucu geri bildirimleri, hizmetin güvenilirliğini değerlendirmek ve doluluk tahminlerini geliştirmek için saklanabilir. <strong>İncelenen uygulama kodunda bu ham veriler için doğrulanmış, sabit bir otomatik silme süresi bulunmamaktadır.</strong> Toplulaştırılmış geçmiş istatistikler tahminleri geliştirmek için daha uzun süre kullanılabilir. Saklama, erişim ve silme işlemleri uygulanabilir mevzuat ve teknik gereklilikler doğrultusunda gözden geçirilir.</p>
+      <p>Hakkınızdaki verilerle ilgili erişim veya silme talebinizi <a href="mailto:yigitshn08@gmail.com">yigitshn08@gmail.com</a> adresine iletebilirsiniz. Hesap oluşturma zorunlu olmadığından, belirli bir gözlem kaydını sizinle ilişkilendirmek için yeterli bilgi her zaman bulunmayabilir. Talepler mümkün olan kayıtlar üzerinde incelenir; talebin niteliğine göre ek doğrulama gerekebilir.</p>
+    </section>
+
+    <section>
+      <h2>7. Veri güvenliği</h2>
+      <p>İncelenen uygulama kodunda Supabase, Google Maps bağlantıları ve ilgili rota/veri API'leri için HTTPS uç noktaları kullanılmaktadır. Bununla birlikte, hiçbir internet veya cihaz depolama yöntemi sıfır risk garantisi vermez. Sunucu veri tabanı yetkilendirmeleri ve erişim politikaları, kullanıcı verilerinin korunmasında ayrıca önem taşır.</p>
+    </section>
+
+    <section>
+      <h2>8. Hesaplar, reklamlar ve hedef kitle</h2>
+      <p>İncelenen sürümde kullanıcı hesabı açılması zorunlu değildir ve uygulama içinde reklam gösterilmemektedir. Reklam veya reklam ölçüm hizmetleri ileride eklenirse bu politika güncellenir.</p>
+      <p>ParkRadar yetişkin sürücüler için tasarlanmıştır ve özellikle 18 yaşından küçükleri hedeflemez.</p>
+    </section>
+
+    <section>
+      <h2>9. Güncellemeler ve iletişim</h2>
+      <p>Uygulamanın özellikleri, üçüncü taraf sağlayıcıları veya veri uygulamaları değiştikçe bu politika güncellenebilir. En güncel sürüm bu sayfada yayımlanır.</p>
+      <p>Gizlilikle ilgili sorularınız için: <a href="mailto:yigitshn08@gmail.com">yigitshn08@gmail.com</a>.</p>
+    </section>
+    <footer>© 2026 ParkRadar · Gizlilik Politikası</footer>
+  </main>
 </body>
 </html>
